@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<script>
+  $(function() {
+    $('#terminal').terminal(function(command, term) {
+      // Handle user commands here
+      // You can execute commands and display the output using the term.echo() method
+    }, {
+      greetings: 'Welcome to the terminal!',
+      name: 'terminal',
+      height: 400,
+      prompt: '> '
+    });
+  });
+</script>

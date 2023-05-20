@@ -4,6 +4,9 @@ import Footer from './components/Footer';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 import Timeline from './components/Timeline';
+import $ from 'jquery';
+import 'jquery.terminal';
+
 
 function App() {
 	const [theme, setTheme] = useState(null);
